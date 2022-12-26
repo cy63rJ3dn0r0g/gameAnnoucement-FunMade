@@ -1,0 +1,430 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: auto;
+          box-sizing: auto;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.conteiner {
+  width: clamp(20.125rem, 100%, 100%);
+  height: 170vh;
+  overflow-y: hidden;
+}
+.navbar {
+  width: clamp(20.125rem, 100%, 100%);
+  height: clamp(3rem, 3rem, 3rem);
+  background: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.ninja {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 4rem;
+  height: 3rem;
+  background: url(assets/ninja\ theory\ logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.ninja:hover {
+  background: url(assets/ninja\ theory\ logo.png);
+  -webkit-filter: invert(0.5);
+          filter: invert(0.5);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ninja:hover {
+  -webkit-box-shadow: 0px 0px 45px 5px rgba(221, 216, 216, 0.2);
+          box-shadow: 0px 0px 45px 5px rgba(221, 216, 216, 0.2);
+}
+.ig {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 4rem;
+  height: 3rem;
+  background: url(assets/instagram.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.ig:hover,
+.xbox:hover,
+.yt:hover {
+  -webkit-box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.4);
+}
+.xbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 4rem;
+  height: 3rem;
+  background: url(assets/xbox.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.yt {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 4rem;
+  height: 3rem;
+  background: url(assets/youtube.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.home {
+  width: clamp(20.125rem, 100%, 100%);
+  height: 90%;
+}
+.staticPage {
+  width: 100%;
+  height: 155vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -3rem;
+  z-index: 0;
+  visibility: visible;
+}
+.imgPage {
+  background: url("assets/photo.jpg");
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-width: 20.125rem;
+  height: calc(155vh + 3rem);
+  visibility: visible;
+}
+
+.countdown-conteiner {
+  width: 70%;
+  height: 120vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 3rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 2.5rem;
+}
+.time {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+  border-bottom: 1px solid whitesmoke;
+}
+.countdown-conteiner :nth-of-type(3) {
+  border-bottom: none;
+}
+small {
+  height: 20vh;
+  width: 80vw;
+  font-size: 4rem;
+  font-family: "sell_your_soulregular";
+  color: darkred;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -1.25rem;
+}
+span {
+  color: whitesmoke;
+  position: relative;
+  vertical-align: middle;
+  top: 1vh;
+  font-size: 9rem;
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  bottom: 0;
+}
+.imgF {
+  background: url(assets/additionlan\ info.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.landingPage {
+  visibility: hidden;
+}
+
+@media screen and (min-device-width: 1024px)  and (-webkit-min-device-pixel-ratio: 1) {
+  .conteiner {
+    width: 100%;
+    height: 60vh;
+    overflow-y: hidden;
+  }
+  .navbar {
+    width: clamp(3rem, 3rem, 3rem);
+    height: clamp(125vh, 100%, 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 0;
+    background: transparent;
+  }
+  .ninja {
+    height: 3rem;
+    width: 3rem;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: absolute;
+    top: 20vh;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  .ig:hover,
+  .xbox:hover,
+  .yt:hover .ninja:hover {
+    -webkit-box-shadow: 0px 0px 55px 5px rgba(255, 255, 255, 0.4);
+            box-shadow: 0px 0px 55px 5px rgba(255, 255, 255, 0.4);
+  }
+  .ig {
+    height: 3rem;
+    width: 3rem;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: absolute;
+    top: 30vh;
+  }
+  .xbox {
+    height: 3rem;
+    width: 3rem;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: absolute;
+    top: 40vh;
+  }
+  .yt {
+    height: 3rem;
+    width: 3rem;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: absolute;
+    top: 50vh;
+  }
+  .staticPage {
+    visibility: hidden;
+  }
+  .home {
+    width: 100%;
+    height: 90%;
+  }
+  .landingPage {
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+  }
+  .video-container {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    position: absolute;
+    visibility: visible;
+  }
+  video {
+    height: auto !important;
+    width: 100% !important;
+
+  }
+  #countDown {
+    opacity: 0;
+    -webkit-transition: 3s;
+    -o-transition: 3s;
+    transition: 8s;
+  }
+  .tooltiptext {
+    visibility: hidden;
+    width: 5vw;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 1rem;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+  }
+  .skip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .countdown-conteiner {
+    width: 70vw;
+    height: 50vh;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 13rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 2.5rem;
+    pointer-events: none;
+  }
+  .time {
+    width: 45vh;
+    height: 40vh;
+    padding: 15px;
+    border-right: 1px solid whitesmoke;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: none;
+  }
+  .countdown-conteiner :nth-of-type(3) {
+    border-right: none;
+  }
+  span {
+    color: whitesmoke;
+    position: relative;
+    justify-items: center;
+    font-size: 12rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  small {
+    height: 20vh;
+    width: auto;
+    font-size: 4rem;
+    font-family: "sell_your_soulregular";
+    color: darkred;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 0rem;
+  }
+  .footer {
+    width: 100%;
+    height: 30vh;
+    top: 115vh;
+    position: absolute;
+    z-index: 0;
+  }
+  .imgPage {
+    visibility: hidden;
+  }
+  .imgF {
+    background: url(assets/additionlan\ info.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .player__controls {
+    position: absolute;
+    background: transparent;
+    width: 20vh;
+    height: 7vh;
+    bottom: 0vh;
+    right: 10vw;
+  }
+  button {
+    width: 15vh;
+    height: 5vh;
+    background: rgba(0, 0, 0, 0.4);
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid grey
+  }
+  button:hover {
+    background: rgba(26, 26, 26, 0.945);
+  }
+}
+.audio {
+  display: none;
+  background: blue;
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  width: 500px;
+  height: 100px;
+  z-index: 1;
+}
+@media screen and (min-device-width: 1900px) {
+  .footer {
+    top: 115vh;
+  }
+}

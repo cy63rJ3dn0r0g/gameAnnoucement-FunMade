@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/font/font.css">
+    <title>Coming Soon</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="navbar">
+            <a href="https://www.instagram.com/officialninjatheory/?hl=en" class="ig"></a>
+            <a href="https://www.xbox.com/en-US/games/senuas-saga-hellblade-II" class="xbox"></a>
+            <a href="https://www.youtube.com/@officialninjatheory" class="yt"></a>
+            <a href="https://ninjatheory.com" class="ninja"></a>
+        </div>
+        <div class="home">
+            <div class="landingPage">
+                <div class="video-container">
+                    <div class="player">
+                        <audio class="audio" src="assets/1-second-of-silence.mp3" autoplay  controls id="audio"></audio>
+                        <video id="video" class="player__video viewer" src="assets/videoHD.mp4"  autoplay 
+                            controls width="1600px" height="1980px">
+                        </video>
+                    
+                        <div class="player__controls">
+                            <button class="player__button toggle" title="Toggle Play">Pause</button>
+                            <button id="skip" class="player__button skip">End <span class="tooltiptext">Click for
+                                    magic</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="staticPage">
+                <div class="imgPage"></div>
+            </div>
+        </div>
+        <div class="countdown-conteiner" id="countDown">
+            <div class="time">
+                <span id="days">000</span>
+                <small>Days</small>
+            </div>
+            <div class="time">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+            <div class="time">
+                <span id="minutes" class="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="imgF"></div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
